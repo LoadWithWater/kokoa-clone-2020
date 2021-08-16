@@ -6,6 +6,11 @@
     align-items: center;
     justify-content: space-between;
 }
+.settings__setting:nth-child(3) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
 
 .settings__setting i {
     opacity: 0.8;
@@ -15,4 +20,17 @@
 
 .settings__setting-column:last-child {
     opacity: 0.5;
+}
+
+@keyframes rotateIcons {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.settings__setting i:hover {
+    animation: rotateIcons 0.5s linear infinite;;
 }
